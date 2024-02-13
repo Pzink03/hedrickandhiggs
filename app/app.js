@@ -17,6 +17,6 @@ app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`)
 })
 
-mongoose.connect('mongodb://root:example@localhost:27017/?authSource=admin', { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected...'))
+mongoose.connect('mongodb://root:example@localhost:27017/?authSource=admin')
+  .then(() => console.log('MongoDB connected'))
   .catch(err => console.error(err));
